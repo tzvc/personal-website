@@ -36,7 +36,7 @@ const Home = () => (
 	<Content>
 		<TitleText>Hi, my name is</TitleText>
 		<Title>Théo Champion.</Title>
-		<Title>I'm a software engineer in Paris.</Title>
+		<Title>Under construction...</Title>
 		{/* <TitleText>This website is still under construction.</TitleText> */}
 	</Content>
 );
