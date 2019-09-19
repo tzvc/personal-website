@@ -1,5 +1,7 @@
 import React from "react";
 import { createGlobalStyle, ThemeProvider } from "styled-components";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+
 // pages
 import Home from "./pages/home.js";
 // components
@@ -21,11 +23,14 @@ const theme = {
 function App() {
 	return (
 		<ThemeProvider theme={theme}>
-			<>
+			<Router>
 				<GlobalStyle />
 				<NavBar />
-				<Home />
-			</>
+
+				<Route path="/" exact component={Home} />
+				{/* <Route path="/about/" component={About} />
+        <Route path="/users/" component={Users} /> */}
+			</Router>
 		</ThemeProvider>
 	);
 }

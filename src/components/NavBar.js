@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 const TABS = ["Education", "Work", "Projects", "Contact"];
 
@@ -9,31 +10,31 @@ const Content = styled.div`
 	justify-content: flex-end;
 `;
 
-const Name = styled.span`
-	font-family: "Roboto Mono", monospace;
-	margin-right: auto;
-	font-size: 0.9em;
-	padding: 0 2em;
-	color: black;
-`;
-
-const Tab = styled.a`
+const NavElem = styled(Link)`
 	font-family: "Roboto Mono", monospace;
 	font-size: 0.9em;
-	padding: 0 2em;
-	color: black;
 	text-decoration: none;
+	color: black;
 	&:hover {
 		cursor: pointer;
 		color: ${props => props.theme.primaryRed};
 	}
 `;
 
+const NavHome = styled(NavElem)`
+	margin-right: auto;
+`;
+
+const NavTab = styled(NavElem)`
+	padding: 0 2em;
+`;
+
 const NavBar = () => (
 	<Content>
-		<Name>THEO CHAMPION</Name>
+		<NavHome to="/">THEO CHAMPION</NavHome>
 		{TABS.map((tab, idx) => (
-			<Tab href={`/${tab.toLocaleLowerCase()}`}>{`0${idx + 1}. ${tab}`}</Tab>
+			<NavTab to={`/${tab.toLocaleLowerCase()}`}>{`0${idx +
+				1}. ${tab}`}</NavTab>
 		))}
 	</Content>
 );
