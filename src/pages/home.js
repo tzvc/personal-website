@@ -15,14 +15,14 @@ const TitleText = styled.p`
 `;
 
 const Title = styled.h1`
-	color: #e1483d;
+	color: ${props => props.theme.primaryRed};
 	font-size: 36px;
 	font-weight: normal;
 	font-style: italic;
 	letter-spacing: 0px;
 	line-height: 1.2em;
 	font-family: "EB Garamond", serif;
-	font-size: 6.25vw;
+	font-size: 5em;
 	font-weight: 600;
 	font-style: normal;
 	letter-spacing: -0.01em;

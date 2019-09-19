@@ -1,7 +1,9 @@
 import React from "react";
-import styled, { createGlobalStyle } from "styled-components";
+import { createGlobalStyle, ThemeProvider } from "styled-components";
 // pages
 import Home from "./pages/home.js";
+// components
+import NavBar from "./components/NavBar";
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -12,12 +14,19 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+const theme = {
+	primaryRed: "#e1483d"
+};
+
 function App() {
 	return (
-		<>
-			<GlobalStyle />
-			<Home />
-		</>
+		<ThemeProvider theme={theme}>
+			<>
+				<GlobalStyle />
+				<NavBar />
+				<Home />
+			</>
+		</ThemeProvider>
 	);
 }
 
