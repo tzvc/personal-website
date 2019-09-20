@@ -3,8 +3,9 @@ import { createGlobalStyle, ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // pages
-import Home from "./pages/home.js";
-import Education from "./pages/education";
+import HomePage from "./pages/HomePage.js";
+import EducationPage from "./pages/EducationPage";
+import WorkPage from "./pages/WorkPage.js";
 // components
 import NavBar from "./components/NavBar";
 
@@ -27,9 +28,9 @@ function App() {
 			<Router>
 				<GlobalStyle />
 				<NavBar />
-				<Route path="/" exact component={Home} />
-				<Route path="/education" component={Education} />
-				{/* <Route path="/users/" component={Users} /> */}
+				<Route path="/" exact component={HomePage} />
+				<Route path="/education" component={EducationPage} />
+				<Route path="/work" component={WorkPage} />
 			</Router>
 		</ThemeProvider>
 	);

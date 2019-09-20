@@ -5,7 +5,7 @@ import PageTitle from "../components/PageTitle";
 // content
 import EducationExperiences from "../content/education.json";
 
-const Education = () => (
+const EducationPage = () => (
 	<>
 		<PageTitle>Education</PageTitle>
 		{EducationExperiences.map(education => (
@@ -14,4 +14,4 @@ const Education = () => (
 	</>
 );
 
-export default Education;
+export default EducationPage;

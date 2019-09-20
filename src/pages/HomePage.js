@@ -32,7 +32,7 @@ const Title = styled.h1`
 	margin: 0;
 `;
 
-const Home = () => (
+const HomePage = () => (
 	<Content>
 		<TitleText>Hi, my name is</TitleText>
 		<Title>Théo Champion.</Title>
@@ -41,4 +41,4 @@ const Home = () => (
 	</Content>
 );
 
-export default Home;
+export default HomePage;
