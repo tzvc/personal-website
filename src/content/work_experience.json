@@ -1,0 +1,26 @@
+[
+	{
+		"name": "OnePoint Australia  ",
+		"duration": "Mar. 2019 - Jul. 2019",
+		"role": "Software Engineer",
+		"content": "Developed a fitness club management web application (in React.js) for Evolution Wellness Holdings Pte. Ltd."
+	},
+	{
+		"name": "Zenly (Snap Inc.)",
+		"duration": "Sept. 2017 - June 2018",
+		"role": "Software Engineer Intern",
+		"content": "Provide tools and metrics on the app back-office (React.js, NodeJS). Developed the web version of the footprint feature (preact.js and WebGL)."
+	},
+	{
+		"name": "DxO",
+		"duration": "Sept. 2016 - Dec. 2016",
+		"role": "Software Engineer Intern",
+		"content": "Setup a automated testing system for the DxO One camera. Created & developed a Python framework around this system"
+	},
+	{
+		"name": "Tiki Labs",
+		"duration": "June 2014 - Aug. 2014",
+		"role": "Software Engineer Intern",
+		"content": "Created a prototype for the tiki6keys touchscreen technology"
+	}
+]
