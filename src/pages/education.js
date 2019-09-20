@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+// components
+import Experience from "../components/Experience";
 
 const EDUCATION = [
 	{
@@ -27,24 +29,8 @@ const EDUCATION = [
 	}
 ];
 
-const Content = styled.div`
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-	padding-top: 30vh;
-`;
-
-const EducationEntry = styled.div`
-	font-family: "Roboto Mono", monospace;
-	font-size: 1em;
-	color: black;
-`;
-
 const CategoryTitle = styled.h1`
 	color: ${props => props.theme.primaryRed};
-	font-weight: normal;
-	font-style: italic;
 	letter-spacing: 0px;
 	line-height: 1.2em;
 	font-family: "EB Garamond", serif;
@@ -57,42 +43,14 @@ const CategoryTitle = styled.h1`
 	text-decoration: none;
 	margin: 0;
 	padding-top: 1em;
-`;
-
-const ExperienceBlock = styled.div`
-	font-family: "Roboto Mono", monospace;
-	font-size: 1em;
-	color: black;
 	margin-bottom: 1em;
-`;
-
-const ExperienceBlockHeader = styled.div`
-	display: flex;
-	align-content: center;
-	justify-content: space-between;
-`;
-const ExperienceTitle = styled.div`
-	font-weight: bold;
-`;
-
-const ExperienceDuration = styled.div``;
-
-const ExperienceRole = styled.div`
-	font-style: italic;
 `;
 
 const Education = () => (
 	<>
 		<CategoryTitle>Education</CategoryTitle>
 		{EDUCATION.map(education => (
-			<ExperienceBlock>
-				<ExperienceBlockHeader>
-					<ExperienceTitle>{education.name}</ExperienceTitle>
-					<ExperienceDuration>{education.duration}</ExperienceDuration>
-				</ExperienceBlockHeader>
-				<ExperienceRole>{education.role}</ExperienceRole>
-				{education.content}
-			</ExperienceBlock>
+			<Experience experience={education} />
 		))}
 	</>
 );
