@@ -6,6 +6,7 @@ import { BrowserRouter as Router, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage.js";
 import EducationPage from "./pages/EducationPage";
 import WorkPage from "./pages/WorkPage.js";
+import ContactPage from "./pages/ContactPage.js";
 // components
 import NavBar from "./components/NavBar";
 
@@ -31,6 +32,7 @@ function App() {
 				<Route path="/" exact component={HomePage} />
 				<Route path="/education" component={EducationPage} />
 				<Route path="/work" component={WorkPage} />
+				<Route path="/contact" component={ContactPage} />
 			</Router>
 		</ThemeProvider>
 	);

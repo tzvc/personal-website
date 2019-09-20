@@ -4,13 +4,14 @@ import styled from "styled-components";
 const Content = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: flex-start;
+	align-items: center;
 	justify-content: center;
-	padding-top: 30vh;
+	padding-top: 35vh;
 `;
 
 const TitleText = styled.p`
-	font-family: "Arial";
+	font-family: "Roboto Mono", monospace;
+	font-size: 1em;
 	color: #cccccc;
 `;
 
@@ -34,10 +35,9 @@ const Title = styled.h1`
 
 const HomePage = () => (
 	<Content>
-		<TitleText>Hi, my name is</TitleText>
-		<Title>Théo Champion.</Title>
-		<Title>Under construction...</Title>
-		{/* <TitleText>This website is still under construction.</TitleText> */}
+		{/* <TitleText>Hi, my name is Théo Champion</TitleText> */}
+		{/* <Title>Théo Champion.</Title> */}
+		<Title>I'm a software engineer in Paris.</Title>
 	</Content>
 );
 
