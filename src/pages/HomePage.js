@@ -4,9 +4,9 @@ import styled from "styled-components";
 const Content = styled.div`
 	display: flex;
 	flex-direction: column;
-	align-items: center;
+	align-items: flex-start;
 	justify-content: center;
-	padding-top: 35vh;
+	padding-top: 25vh;
 `;
 
 const TitleText = styled.p`
@@ -35,8 +35,8 @@ const Title = styled.h1`
 
 const HomePage = () => (
 	<Content>
-		{/* <TitleText>Hi, my name is Théo Champion</TitleText> */}
-		{/* <Title>Théo Champion.</Title> */}
+		<TitleText>Hi, my name is</TitleText>
+		<Title>Théo Champion.</Title>
 		<Title>I'm a software engineer in Paris.</Title>
 	</Content>
 );
