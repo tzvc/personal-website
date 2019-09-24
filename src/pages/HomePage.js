@@ -31,6 +31,9 @@ const Title = styled.h1`
 	text-transform: none;
 	text-decoration: none;
 	margin: 0;
+	@media (max-width: ${({ theme }) => theme.tablet}) {
+		font-size: 3em;
+	}
 `;
 
 const HomePage = () => (
