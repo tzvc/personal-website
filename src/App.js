@@ -13,14 +13,16 @@ import NavBar from "./components/NavBar";
 const GlobalStyle = createGlobalStyle`
   body {
 		height: 100%;
-		background-color: #fffaf029
+		background-color: ${({ theme }) => theme.primaryBackground}
 		margin: 0;
 		padding: 5vh 5vw;
   }
 `;
 
 const theme = {
-	primaryRed: "#e1483d"
+	primaryRed: "#e1483d",
+	primaryBackground: "#FEFDFC",
+	tablet: "768px"
 };
 
 function App() {
