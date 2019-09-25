@@ -1,5 +1,5 @@
 import React from "react";
-import { createGlobalStyle, ThemeProvider } from "styled-components";
+import styled, { createGlobalStyle, ThemeProvider } from "styled-components";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
 // pages
@@ -16,6 +16,8 @@ const GlobalStyle = createGlobalStyle`
 		background-color: ${({ theme }) => theme.primaryBackground}
 		margin: 0;
 		padding: 5vh 5vw;
+		max-width: 1200px;
+		margin: auto;
   }
 `;
 
