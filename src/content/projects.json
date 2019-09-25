@@ -1,0 +1,20 @@
+[
+	{
+		"title": "genetic-playground",
+		"description": "A Javascript web application to explore and experiment with evolutionary computation principles.",
+		"thumbnail_src": "https://i.ibb.co/s3sSGCL/Screen-Shot-2019-09-25-at-12-28-40-pm.png",
+		"url": "https://theochampion.github.io/genetic-playground/index.html"
+	},
+	{
+		"title": "frank",
+		"description": "Frank is a home assistant backed by the google assistant SDK library that make it easy to with external hardware.",
+		"thumbnail_src": "https://i.ibb.co/rQbzs9k/frank.png",
+		"url": "https://github.com/theochampion/frank"
+	},
+	{
+		"title": "FTP server",
+		"description": "A fast, lightweight, RFC 959 compliant FTP server written in C.",
+		"thumbnail_src": "https://web.archive.org/web/20180821080843im_/http://theochampion.com/wp-content/uploads/2017/07/ftpserver.png",
+		"url": "https://github.com/theochampion/my-FTP-server"
+	}
+]
